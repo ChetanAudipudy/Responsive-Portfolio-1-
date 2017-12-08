@@ -1,0 +1,261 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header{
+    max-width: 960;
+    display: flex;
+    justify-content: center; 
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    flex: 0 1 100%;
+    border-style: outset;
+    z-index: 10;
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.contentContainer{
+    flex: 1;
+}
+
+.logo{
+  margin: 0;
+  background: #4aaaa5;
+  font-size: 30px;
+  padding: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
+  margin-left: 214px;
+  margin-right: 180px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  
+}
+.main-nav{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  margin-right: 205px;
+  margin-left: 135px;
+  padding: 0;
+  flex: 0 1 20%;
+
+}
+.main-nav a{
+    color: #777777;
+}
+.main-nav a:hover{
+  color: #4aaaa5;
+}
+.seperator{
+  padding-right: 20px;
+  border-right-style: solid; 
+  border-right-width: 1px;
+  color: #777777;
+}
+/*.main-nav li a span:first-child:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid #4aaaa5;
+  border-left: 2px solid #4aaaa5;
+
+}*/
+
+.contentContainer{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background-image: url(https://github.com/ChetanAudipudy/Basic-Portfolio/blob/master/assets/images/BG.png?raw=true)
+}
+.leftContainer{
+    background: white;
+    max-width: 650px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 570px;
+    height: auto;
+    text-align: justify;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #777777;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+.dp{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.aboutMe{
+    color: #4aaaa5;
+    font-size: 35px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom-style: solid;
+    border-bottom-color: #777777;
+    border-width: 1px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
+.rightContainer{
+    background: white;
+    width: 220px;
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-height: 250px;
+    color: #777777;
+}
+.connect{
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-bottom-color: #777777;
+    padding-top: 10px;
+    padding-bottom: 18px;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #666666;
+    display: flex;
+    justify-content: center;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 10px;
+}
+.footerText{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 980px){
+
+  .leftContainer{
+    width: 333px;
+    height: auto;
+    }
+  .dp{
+    width: 100%;
+  }
+  .logo{
+
+    margin-left: 175px;
+    margin-right: 263px;
+  }  
+  .seperator{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .lastSep{
+    padding-left: 10px;
+  }
+  .main-nav{
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 768px){
+
+  .contentContainer{
+
+    width: 100%;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .leftContainer{
+    width: 90%;
+    height: auto;
+  }
+  .rightContainer{
+    max-width: 100%;
+    width: 90%;
+    margin: 0px;
+    padding: 20px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .header{
+    max-width: 960;
+    display: flex;
+    justify-content: center; 
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    flex: 0 1 100%;
+    border-style: outset;
+    z-index: 10;
+    }
+
+  .logo{
+
+    width: 645px;
+    margin: 0px; 
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 25px;
+  } 
+
+  .main-nav{
+
+    padding: 15px;
+    width: 100%;
+  }
+
+  .seperator, .lastSep{
+
+     padding-right: 20px;
+  border-right-style: none; 
+  }
+
+  .contentContainer .leftContainer{
+
+    width: 83%;
+  }
+
+  .contentContainer .rightContainer{
+
+    width: 89%;
+  }
+}
